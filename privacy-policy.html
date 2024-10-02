@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktok login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./anime.min.js"></script>
+</head>
+<body>
+    <div class="bg-white dark:bg-slate-800 h-screen px-12">
+        <div class="container bg-white mx-auto h-3/4 pt-8 flex justify-center items-center flex-col">
+            <svg id="morphin" class="">
+                <polygon class="polymorph" stroke="#a855f7" fill="none" points=""></polygon>
+            </svg>
+            <button class="w-48 h-12 rounded-full bg-sky-400 text-white hover:bg-sky-600 ease-linear duration-200">Privacy Policy</button>
+        </div>
+        <div class="footer bg-sky-400 h-1/4 px-12 pt-8">
+            <ul class="list-disc">
+                <li class="list-item">
+                    <a href="./terms-of-service.html" class="text-[#f4f4f5]">Terms of Service</a>
+                </li>
+                <li class="list-item">
+                    <a href="./privacy-policy.html" class="text-[#f4f4f5]">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        anime({
+            targets: '#morphin .polymorph',
+            points: [
+              { value: [
+                '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
+                '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
+              },
+              { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
+              { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
+              { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
+            ],
+            easing: 'easeOutQuad',
+            duration: 2000,
+            loop: true
+          });
+    </script>
+</body>
+</html>
